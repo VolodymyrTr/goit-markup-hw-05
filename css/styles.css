@@ -758,6 +758,7 @@ img {
 .visually-hidden:checked + .checkbox-text>.custom-checkbox {
     background-color: #404bbf;
     fill: #F4F4FD;
+    border: none;
 }
 
 .form-field-checkbox {

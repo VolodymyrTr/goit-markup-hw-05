@@ -755,25 +755,34 @@ img {
     border-color: #4D5AE5;
 }
 
-.visually-hidden:checked + .checkbox-text>.icon-checkbox {
+.visually-hidden:checked + .checkbox-text>.custom-checkbox {
     background-color: #404bbf;
     fill: #F4F4FD;
 }
 
 .form-field-checkbox {
+    display: flex;
+    justify-content: center;
     margin-bottom: 24px;
 }
 
- .form-checkbox {
+ .visually-hidden {
     visibility: hidden;
 }
 
 .checkbox-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+}
+
+.checkbox-text input {
+    margin: 0;
 }
 
 .custom-checkbox {

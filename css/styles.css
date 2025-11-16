@@ -748,7 +748,6 @@ img {
     background-color: transparent;
     outline: transparent;
     resize: none;
-    outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -770,14 +769,16 @@ img {
     color: #8e8f99;
 }
 
-.form-custom-checkbox {
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
-    cursor: pointer;
-}
-
-.form-checkbox:checked+.checkbox-text>.custom-checkbox {
-    background-color: #404bbf;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-link {

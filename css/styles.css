@@ -764,6 +764,10 @@ img {
     margin-bottom: 24px;
 }
 
+ .form-checkbox {
+    visibility: hidden;
+}
+
 .checkbox-text {
     font-weight: 400;
     font-size: 12px;

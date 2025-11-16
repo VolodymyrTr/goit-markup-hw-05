@@ -627,8 +627,7 @@ img {
     background-color: #fcfcfc;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        padding: 72px 24px;
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -636,6 +635,9 @@ img {
 }
 
 .backdrop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     cursor: pointer;
     border: none;
@@ -643,11 +645,17 @@ img {
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
+    padding: 0;
+    border-radius: 50%;
     stroke-width: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     fill: #2e2f42;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-btn:hover,
@@ -671,6 +679,7 @@ img {
     display: block;
     font-weight: 400;
     font-size: 12px;
+    line-height: 1.17;
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;

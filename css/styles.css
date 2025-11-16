@@ -662,7 +662,7 @@ img {
 .backdrop-btn:focus {
     border: none;
     background-color: #404bbf;
-    fill: #fff;
+    fill: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -736,14 +736,15 @@ img {
 }
 
 .form-text-comment {
-    border-color: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
     height: 120px;
     padding: 8px 16px;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
     resize: none;
